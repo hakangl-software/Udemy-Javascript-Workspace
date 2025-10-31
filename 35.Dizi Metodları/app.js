@@ -12,10 +12,20 @@
     
     
     toString: diziyi stringe çevirir.
+    join    : diziyi stringe çevirir. Farkı ise araya eleman ekleyebiliriz.
+
+    cancat  : dizileri birleştirmek için kullanılır.
+    slice   : dilimlemek anlamındadır. Diziyi istenilen yerden bölüp dizi oluşturur.
+    length  : dizinin uzunluğunu verir.
+    reverse : dizinin elemanlarını ters çevirir.
+    split   : bölmek anlamındadır. Belirli bir ifadeye göre bölüp diziye çevirmek.
+    indexOf : elemanın index numarsını verir.
+    includes: veilen elemanı içeriyor mu kontrol eder?
 
 */
 
-let arabalar = ["bmw", "toyota", "mercedes", "porsche"];
+let arabalar1 = ["bmw", "toyota", "mercedes", "porsche"];
+let arabalar2 = ["KIA","mazda"];
 
 // PUSH METOT
 // console.log(arabalar);
@@ -50,6 +60,49 @@ let arabalar = ["bmw", "toyota", "mercedes", "porsche"];
 // arabalar.splice(2,2,"audi"); // Burada indeks 2 olandan başlayıp 2 eleman siler sonrasında "audi" ekler.
 // console.log(arabalar);
 
-//TOSTRING METOT
-let stringArabalar = arabalar.toString();
-console.log(arabalar);
+// TOSTRING METOT
+// console.log(typeof arabalar)
+// let stringArabalar = arabalar.toString();
+// console.log(typeof stringArabalar);
+
+// jOIN METOT
+// let stringArabalar = arabalar.join("-");
+// console.log(stringArabalar);
+
+// CONCAT METOT
+// let birlesmisDizi = arabalar1.concat(arabalar2);
+// console.log(birlesmisDizi);
+
+//SLICE METOT
+// console.log(arabalar1);
+// let ayriDizi = arabalar1.slice(2,2); // index numarası, count değerini gir.
+// console.log(ayriDizi);
+
+
+// LENGTH ÖZELLİK
+// console.log(arabalar1.length);
+
+// REVERSE METOT
+// console.log(arabalar1);
+// arabalar1.reverse();
+// console.log(arabalar1);
+
+
+// SPLIT METOT
+// let isimler = ["Enes,Ali,Veli"];
+// let isimlerDizi = isimler.split(",");
+// console.log(typeof isimlerDizi);
+
+
+// INDEXOF METOT
+
+let index = arabalar1.indexOf("mercedes");
+console.log(index);
+// INCLUDES METOT
+// let sonuc = arabalar1.includes("bmw");
+// if(sonuc){
+//     console.log("eleman vardır");
+// }
+// else{
+//     console.log("Eleman yoktur.");
+// }
